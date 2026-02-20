@@ -1,1 +1,172 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
 
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    font-size: 1.2em;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Unordered list inside navbar */
+.navbar ul {
+    display: flex;
+    justify-content: center;   /* centers horizontally */
+    gap: 2em;                  /* spacing between items */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Anchor tags inside list items */
+.navbar ul li a {
+    color: #fff;
+}
+
+/* Main content spacing so it's not hidden behind fixed navbar */
+.main-content {
+    padding-top: 1em;
+}
+
+/* Section styling */
+.main-content section {
+    text-align: center;
+}
+
+/* Home section heading */
+#home h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Home section paragraph */
+#home p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Portfolio container layout */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+/* Portfolio item card styling */
+.portfolio-item {
+    flex: 1 1 40%;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1em;
+    max-width: 45%;
+    margin: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: transform 0.3s;
+}
+
+/* Portfolio hover scaling */
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+/* Portfolio headings */
+.portfolio-item h3 {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+/* Portfolio paragraphs */
+.portfolio-item p {
+    margin-bottom: 1.5em;
+    color: #666;
+}
+
+/* Calculator container */
+.calculator {
+    max-width: 200px;
+    margin: 8px auto;
+}
+
+/* Calculator's input field */
+#calculator-input {
+    margin-bottom: 10px;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    text-align: right;
+    padding: 10px 8px;
+    box-sizing: border-box;
+}
+
+/* Set Calculator input text to be blue*/
+#display::placeholder {
+    color: dodgerblue;
+}
+
+/* Calculator button container */
+#button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Rows of buttons */
+.button-row {
+    display: flex;
+    justify-content: center;
+}
+
+/* Content within calculator buttons */
+.button-row button {
+    justify-content: center;  /* horizontal centering */
+    align-items: center;      /* vertical centering */
+    font-size: 1.5rem;
+    flex: 1;              /* all buttons share row width equally */
+    height: 45px;
+}
+
+#button-row-equals {
+    flex: 1;
+}
+
+#button-row-equals button {
+    width: 100%;
+}
+
+/* For mobile or smaller screen devices */
+@media (max-width: 600px) {
+    .button-row button {
+        width: 60px;
+        height: 33px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Portfolio images */
+.portfolio-item img {
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+#footer {
+    background-color: #222;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

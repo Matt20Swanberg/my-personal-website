@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My personal portfolio website</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </nav>
+    <!-- Main Content -->
+  <main class="main-content">
+    <section id="home">
+      <h1>Matthew Swanberg</h1>
+            <h3><a href="http://github.com/Matt20Swanberg">Github Profile</a>
+            </h3>
+            <p>Discover my work and projects below.</p>
+    </section>
 
+    <section id="about" class="about-container">
+            <h2>About me</h2>
+            <p>My name is Matthew Swanberg, I am a QA Analyst looking to step into the Software Engineering role.
+                I have a background in coding, but strenghting these skills with through Flatiron School,
+                learning web development and building projects using HTML, CSS, and JavaScript.
+             </p>
+    </section>
+
+    <section id="portfolio" class="portfolio-container">
+      <article class="portfolio-item">
+        <h3>Javascript Calculator</h3>
+        <p>A simple calculator</p>
+            <div class="calculator">
+                <div id="calculator-input">
+                        <input type="text" id="display" placeholder="0" readonly>
+                <div id="button-container">
+                    </div>
+                    <div class="button-row">
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                    </div>
+                    <div class="button-row">
+                        <button>4</button>
+                        <button>5</button>
+                        <button>6</button>
+                    </div>
+                    <div class="button-row">
+                        <button>7</button>
+                        <button>8</button>
+                        <button>9</button>
+                    </div>
+                    <div class="button-row">
+                        <button>+</button>
+                        <button>-</button>
+                        <button>*</button>
+                        <button>/</button>
+                    </div>
+                    <div class="button-row" id="button-row-equals">
+                        <button>=</button>
+                    </div>
+                </div>
+            </div>
+        <img src="/screenshot_images/javascript-Calculator.jpeg" alt="Javascript Calculator">
+        <div>
+            <a href="https://github.com/Matt20Swanberg/javascript_Calculator">Project Link</a>  
+        </div>          
+        </li>
+      </article>
+
+      <article class="portfolio-item">
+        <h3>Convert Temperatures</h3>
+        <p>Converting temperatures (C/F) in Rome of a given list </p>
+        <img src="/screenshot_images/convert-Temperatures.jpg" alt="Convert Temperatures">
+        <div>
+            <a href="https:github.com/Matt20Swanberg/js-expressions-lab-1">Project Link</a>  
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
